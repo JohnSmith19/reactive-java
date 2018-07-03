@@ -1,9 +1,7 @@
-package reactivejava;
+package reactivejava.observable;
 
-import reactivejava.observable.*;
-
-public class MainApplication {
-    public static void main(String args[]) {
+public class ObservableTest {
+    public void run() {
         FirstExample firstExample = new FirstExample();
         firstExample.emit();
 
