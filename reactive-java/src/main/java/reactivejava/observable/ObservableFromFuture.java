@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 
 public class ObservableFromFuture {
     public void fromFuture() {
-        System.out.println("ObservableFromCallable::fromFuture()");
+        System.out.println("ObservableFromFuture::fromFuture()");
 
         Future<String> future = Executors.newSingleThreadExecutor().submit(() -> {
             Thread.sleep(1000);

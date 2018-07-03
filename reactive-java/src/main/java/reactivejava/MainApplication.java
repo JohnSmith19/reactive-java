@@ -30,5 +30,9 @@ public class MainApplication {
         // observable fromFuture example
         ObservableFromFuture off = new ObservableFromFuture();
         off.fromFuture();
+
+        // observable fromPublisher example
+        ObservableFromPublisher ofp = new ObservableFromPublisher();
+        ofp.fromPublisher();
     }
 }
