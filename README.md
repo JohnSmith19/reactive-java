@@ -112,7 +112,7 @@ Single class 는 오직 1 개의 데이터만 발행 하도록 한정한다.
 
 #### just()
 
-Sinle 클래스는 Observable 과 거의 같은 방법으로 사용가능 하다
+Single 클래스는 Observable 과 거의 같은 방법으로 사용가능 하다
 
 ```java
 Single<String> source = Single.just("Hello Single");
