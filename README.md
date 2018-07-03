@@ -4,6 +4,8 @@
 
 ## [Observable](http://reactivex.io/documentation/ko/observable.html)
 
+<img src="http://reactivex.io/assets/operators/legend.png" width="600"/>
+
 ### [just()](http://reactivex.io/documentation/operators/just.html)
 
 인자로 넣은 데이터를 차례로 발행하기 위해 Observable 을 생성한다.
@@ -95,6 +97,29 @@ Iterator 의 데이터를 처리한다.
 [Flow.Publisher<T>](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/Flow.Publisher.html)
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/688f3554de934cdad17aae1ff19bdcb2712c5c45/reactive-java/src/main/java/reactivejava/observable/ObservableFromPublisher.java)
+
+## [Single](http://reactivex.io/documentation/ko/single.html)
+
+Single class 는 오직 1 개의 데이터만 발행 하도록 한정한다.
+
+결과가 유일한 서버 API 를 호출할 때 사용할 수 있다.
+
+<img src="https://raw.github.com/wiki/ReactiveX/RxJava/images/rx-operators/Single.legend.png" width="600"/>
+
+데이터 하나가 발행과 동시에 종료 (onSuccess) 된다. 라이프사이클 함수는 onSuccess(T value) 함수와 onError()
+
+함수로 구성된다.
+
+#### just()
+
+Sinle 클래스는 Observable 과 거의 같은 방법으로 사용가능 하다
+
+```java
+Single<String> source = Single.just("Hello Single");
+source.subscribe(System.out::println);
+```
+
+[Example]()
 
 ## Testing
 
