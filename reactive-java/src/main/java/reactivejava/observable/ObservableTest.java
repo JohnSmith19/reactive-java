@@ -2,6 +2,8 @@ package reactivejava.observable;
 
 public class ObservableTest {
     public void run() {
+        System.out.println("====== ObservableTest start ======");
+
         FirstExample firstExample = new FirstExample();
         firstExample.emit();
 
@@ -32,5 +34,7 @@ public class ObservableTest {
         // observable fromPublisher example
         ObservableFromPublisher ofp = new ObservableFromPublisher();
         ofp.fromPublisher();
+
+        System.out.println("====== ObservableTest finish ======");
     }
 }
