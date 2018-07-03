@@ -2,8 +2,6 @@
 
 [RxJava: Reactive Extensions for the JVM](https://github.com/ReactiveX/RxJava)
 
-## Example
-
 ## Observable
 
 ### [just()](http://reactivex.io/documentation/operators/just.html)
@@ -97,3 +95,13 @@ Iterator 의 데이터를 처리한다.
 [Flow.Publisher<T>](https://docs.oracle.com/javase/9/docs/api/java/util/concurrent/Flow.Publisher.html)
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/688f3554de934cdad17aae1ff19bdcb2712c5c45/reactive-java/src/main/java/reactivejava/observable/ObservableFromPublisher.java)
+
+## Testing
+
+### Unit Test
+
+[ObservableTest](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/reactivejava/observable/ObservableTest.java)
+
+### Intergration test
+
+[MainApplication](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/MainApplication.java)
