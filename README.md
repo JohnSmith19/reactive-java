@@ -1,3 +1,5 @@
+<img src="http://reactivex.io/assets/Rx_Logo_S.png" align="right"/>
+
 # Reactive Java - RxJava Programming
 
 [RxJava: Reactive Extensions for the JVM](https://github.com/ReactiveX/RxJava)
