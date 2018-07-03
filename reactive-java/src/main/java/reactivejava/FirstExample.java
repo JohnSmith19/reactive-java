@@ -8,8 +8,4 @@ public class FirstExample {
                 .subscribe(data->System.out.println(data));
     }
 
-    public static void main(String args[]) {
-        FirstExample demo = new FirstExample();
-        demo.emit();
-    }
 }
