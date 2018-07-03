@@ -127,6 +127,8 @@ source.subscribe(System.out::println);
 
 [ObservableTest](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/reactivejava/observable/ObservableTest.java)
 
-### Integration test
+[SingleTest](https://github.com/JohnSmith19/reactive-java/blob/20dea2ee4da04107a779db3c65f4abf603471a79/reactive-java/src/main/java/reactivejava/single/SingleTest.java)
+
+### Integration Test
 
 [MainApplication](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/MainApplication.java)
