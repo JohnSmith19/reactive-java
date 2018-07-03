@@ -102,6 +102,6 @@ Iterator 의 데이터를 처리한다.
 
 [ObservableTest](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/reactivejava/observable/ObservableTest.java)
 
-### Intergration test
+### Integration test
 
 [MainApplication](https://github.com/JohnSmith19/reactive-java/blob/01b1c6d8cf62c74f612b843926f579e8ef8871e1/reactive-java/src/main/java/MainApplication.java)
