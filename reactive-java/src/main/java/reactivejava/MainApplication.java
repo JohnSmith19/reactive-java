@@ -26,5 +26,9 @@ public class MainApplication {
         // observable fromCallable example
         ObservableFromCallable ofc = new ObservableFromCallable();
         ofc.fromCallable();
+
+        // observable fromFuture example
+        ObservableFromFuture off = new ObservableFromFuture();
+        off.fromFuture();
     }
 }
