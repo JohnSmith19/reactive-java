@@ -119,7 +119,7 @@ Single<String> source = Single.just("Hello Single");
 source.subscribe(System.out::println);
 ```
 
-[Example]()
+[Example](https://github.com/JohnSmith19/reactive-java/blob/20dea2ee4da04107a779db3c65f4abf603471a79/reactive-java/src/main/java/reactivejava/single/SingleExample.java)
 
 ## Testing
 
