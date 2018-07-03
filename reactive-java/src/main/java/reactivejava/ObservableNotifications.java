@@ -5,7 +5,7 @@ import io.reactivex.disposables.Disposable;
 
 public class ObservableNotifications {
     public void emit() {
-        System.out.println("ObservableNotifications.emit");
+        System.out.println("ObservableNotifications::emit");
 
         Observable<String> source = Observable.just("RED", "GREEN", "YELLOW");
 

@@ -15,7 +15,12 @@ public class MainApplication {
         ObservableCreateExample oc = new ObservableCreateExample();
         oc.create();
 
+        // Observable formArray example
         ObservableFromArray ofa = new ObservableFromArray();
         ofa.fromArray();
+
+        // Observable fromIterable example
+        ObservableFromIterable ofi = new ObservableFromIterable();
+        ofi.fromIterable();
     }
 }
