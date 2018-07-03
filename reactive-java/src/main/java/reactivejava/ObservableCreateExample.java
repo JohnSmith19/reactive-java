@@ -6,6 +6,8 @@ import io.reactivex.functions.Consumer;
 
 public class ObservableCreateExample {
     public void create() {
+        System.out.println("ObservableCreateExample.create");
+
         Observable<Integer> source = Observable.create(
                 (ObservableEmitter<Integer> emitter)-> {
                     emitter.onNext(100);
@@ -18,14 +20,14 @@ public class ObservableCreateExample {
         source.subscribe(System.out::println);
 
         // Lambda Expression
-        source.subscribe(data -> System.out.println("Result: " + data));
+        // source.subscribe(data -> System.out.println("Result: " + data));
 
         // Anonymous Object
-        source.subscribe(new Consumer<Integer>() {
-            @Override
-            public void accept(Integer data) throws Exception {
-                System.out.println("Result: " + data);
-            }
-        });
+//        source.subscribe(new Consumer<Integer>() {
+//            @Override
+//            public void accept(Integer data) throws Exception {
+//                System.out.println("Result: " + data);
+//            }
+//        });
     }
 }
