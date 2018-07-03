@@ -2,7 +2,7 @@
 
 [RxJava: Reactive Extensions for the JVM](https://github.com/ReactiveX/RxJava)
 
-## Observable
+## [Observable](http://reactivex.io/documentation/ko/observable.html)
 
 ### [just()](http://reactivex.io/documentation/operators/just.html)
 
