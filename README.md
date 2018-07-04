@@ -33,7 +33,11 @@ onComplete 알림이 왔을때 자동으로 dispose()가 호출되어 Observable
 
 ### [create()](http://reactivex.io/documentation/operators/create.html)
 
-just() 와는 달리 데이터를 발행하려면 onNext()를 직접 호출해야 하며 모든
+create an Observable from scratch by means of a function
+
+<img src="http://reactivex.io/documentation/operators/images/create.c.png" width="600"/>
+
+just() 와는 달리 데이터를 발행 하려면 onNext()를 직접 호출해야 하며 모든
 데이터를 발행 후 반드시 onComplete() 함수를 호출해야 한다.
 
 ```java
@@ -61,8 +65,8 @@ source.subscribe(data -> System.out.println("Result: " + data));
 
 // Anonymous Object
 source.subscribe(new Consumer<Integer>() {
-@override
-public void accept(Integer data) throws Exception {
+    @override
+    public void accept(Integer data) throws Exception {
         System.out.println("Result: " + data);
     }
 });
@@ -156,7 +160,7 @@ AsyncSubject 는 Observable 에서 발행한 마지막 데이터를 얻어올 �
 
 완료되기 전까지는 구독자에게 데이터를 전달하지 않다가 완료와 동시에 첫번째와 두번째 구독자에게 마지막 blue 를 발행하고 종료한다.
 
-[Example](https://github.com/JohnSmith19/reactive-java/blob/f82763afe8623b760698ee926d6c31a67193ca43/reactive-java/src/main/java/reactivejava/subjects/AsyncSubjectExample.java)
+[Example](https://github.com/JohnSmith19/reactive-java/blob/f7d090e458b00d1cf502dd1fb198747f6f4fb77e/reactive-java/src/main/java/reactivejava/subjects/AsyncSubjectExample.java)
 
 ### BehaviorSubject
 
@@ -176,7 +180,7 @@ pink 는 BehaviorSubject 를 생성할 때 넘긴 초기값이다. 첫 번째 �
 <img src="http://reactivex.io/documentation/operators/images/S.PublishSubject.png" width="600"/>
 
 첫 번째 구독자가 subscribe() 함수를 호출하면 red, green 데이터를 발행한다. 두번째 구독자가 subscribe() 함수를 호출하면 blue 를 발행하고
-on Complete 를 호출해 데이터 발행을 완료한다.
+onComplete 를 호출해 데이터 발행을 완료한다.
 
 첫번째 구독자는 red, green, blue 를 모두 전달 받았으며, 두번째 구독자는 구독한 이후에 발행된 blue 만 전달 받는다.
 
