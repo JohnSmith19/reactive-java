@@ -178,6 +178,21 @@ on Complete 를 호출해 데이터 발행을 완료한다.
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/2812d8c0640e5caecac5c9a1839d712e04ea6723/reactive-java/src/main/java/reactivejava/subjects/PublishSubjectExample.java)
 
+### ReplaySubject
+
+ReplaySubject 는 구독자가 새로 생기면 항상 데이터의 처음부터 끝까지 발행해 주는 것을 보장해준다.
+모든 데이터 내용을 저장해두는 과정 중 메모리 누수가 발생할 가능성을 염두에 두고 사용할 때 주의해야 한다.
+
+<img src="http://reactivex.io/documentation/operators/images/S.ReplaySubject.png" width="600"/>
+
+첫번째 구독자가 subscribe() 를 호출하면 red, green 데이터를 발행한다. 두번째 구독자가 subscribe() 를 호출하면 마지막 데이터인 blue 를 발행하고 onComplete() 를 호출해 
+데이터 발행을 완료한다. 
+
+첫번째 구독자는 Observable 을 구독한 이후에 발행한 red, green 을 전달받는다. 두번째 구독자가 subscribe() 를 호출하면 지금까지 발행된 red, green 을 바로 전달 받는다.
+마지막으로 Subject Class 가  blue 를 발행하면 두 구독자 모두 해당 값을 전달 받는다. 
+
+[Example]()
+
 ## Testing
 
 ### Unit Test

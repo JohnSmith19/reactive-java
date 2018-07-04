@@ -15,6 +15,9 @@ public class SubjectTest {
         PublishSubjectExample pse = new PublishSubjectExample();
         pse.marbleDiagram();
 
+        ReplaySubjectExample rse = new ReplaySubjectExample();
+        rse.marbleDiagram();
+
         System.out.println("====== SubjectTest finish ======");
     }
 }
