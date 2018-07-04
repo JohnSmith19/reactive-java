@@ -70,6 +70,10 @@ public void accept(Integer data) throws Exception {
 
 ### [From](http://reactivex.io/documentation/operators/from.html)
 
+convert various other objects and data types into Observables
+
+<img src="http://reactivex.io/documentation/operators/images/from.c.png" width="600"/>
+
 #### fromArray()
 
 배열에 들어있는 데이터를 처리할때는 Observable fromArray 를 사용한다.
