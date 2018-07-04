@@ -8,7 +8,7 @@ public class ObservableFromPublisher {
     public void fromPublisher() {
         System.out.println("ObservableFromPublisher::fromPublisher()");
 
-        Publisher<String> publisher = (Subscriber<? super String>s) -> {
+        Publisher<String> publisher = (Subscriber<? super String> s) -> {
             s.onNext("Hello Observable.fromPublisher()");
             s.onComplete();
         };

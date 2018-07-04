@@ -48,7 +48,7 @@ public interface ObservableOnSubscribe<T> {
 
 ### Lambda 표현식
 
-[식별자 없이 실행 가능한 함수 표현식](http://jdm.kr/blog/181)
+[식별자 없이 실행 가능한 함수 표현식](http://multifrontgarden.tistory.com/124)
 
 [Java 8 Method Reference](https://www.codementor.io/eh3rrera/using-java-8-method-reference-du10866vx)
 

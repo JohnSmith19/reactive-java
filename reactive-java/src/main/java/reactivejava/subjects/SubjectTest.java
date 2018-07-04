@@ -6,6 +6,8 @@ public class SubjectTest {
 
         AsyncSubjectExample ase = new AsyncSubjectExample();
         ase.marbleDiagram();
+        ase.asSubscriber();
+        ase.afterComplete();
 
         System.out.println("====== SubjectTest finish ======");
     }
