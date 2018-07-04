@@ -123,6 +123,37 @@ source.subscribe(System.out::println);
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/20dea2ee4da04107a779db3c65f4abf603471a79/reactive-java/src/main/java/reactivejava/single/SingleExample.java)
 
+## "Hot", "Cold" Observable
+
+### Cold Observable
+
+차가운 Observable 은 Observable 선언 후 just(), from 등을 호출해도 Observer 가 subscribe() 함수를 호출하여 구독하지 않으면 데이터를 발행하지 않는다.
+
+### Hot Observable
+
+뜨거운 Observable 은 구독자의 존재 여부와 관계없이 데이터를 발행하는 Observable 이다. 따라서 여러 구독자를 고려할 수 있다. 구독자는 Observable 에서 발행하는 데이터를 처음부터 모두 수신할 것으로 보장할 수 없다.
+
+차가운 Observable 은 구독자가 구독을 시작하면 준비된 데이터를 처음부터 발행하며 뜨거운 Observable 은 구독한 시점부터 Observable 에서 발행한 값을 받는다.
+
+## [Subject](http://reactivex.io/documentation/ko/subject.html)
+
+차가운 Observable 을 뜨거운 Observable 로 바꿔준다. Subject 의 특성은 Observable 속성과 구독자의 속성이 모두 모여있다. Observable 처럼 데이터를 발행할 수 있고 구독자처럼 발행된 데이터를 바로 처리할 수도 있다.
+RxJava 에서는 AsyncSubject, BehaviorSubject, PublishSubject, ReplaySubject 등을 제공한다.
+
+### AsyncSubject
+
+AsyncSubject 는 Observable 에서 발행한 마지막 데이터를 얻어올 수 있는 Subject 이다. 완료되기 전 마지막 데이터에만 관심이 있으며 이전 데이터는 무시한다.
+
+<img src="http://reactivex.io/documentation/operators/images/S.AsyncSubject.e.png" width="600"/>
+
+1.  처음 구독자가 subscribe() 함수를 호출한다.
+2.  이후에 red, green 이 발행된 후 두번째 구독자가 subscribe() 함수를 호출한다.
+3.  마지막으로 blue 가 발행되고 데이터 발행을 완료(onComplete event) 한다.
+
+완료되기 전까지는 구독자에게 데이터를 전달하지 않다가 완료와 동시에 첫번째와 두번째 구독자에게 마지막 blue 를 발행하고 종료한다.
+
+[Example]()
+
 ## Testing
 
 ### Unit Test

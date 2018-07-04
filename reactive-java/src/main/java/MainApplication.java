@@ -1,12 +1,16 @@
 import reactivejava.observable.*;
 import reactivejava.single.SingleTest;
+import reactivejava.subjects.SubjectTest;
 
 public class MainApplication {
     public static void main(String args[]) {
-        ObservableTest ot = new ObservableTest();
-        ot.run();
+        ObservableTest observableTest = new ObservableTest();
+        observableTest.run();
 
-        SingleTest st = new SingleTest();
-        st.run();
+        SingleTest singleTest = new SingleTest();
+        singleTest.run();
+
+        SubjectTest subjectTest = new SubjectTest();
+        subjectTest.run();
     }
 }
