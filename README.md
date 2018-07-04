@@ -162,7 +162,7 @@ BehaviorSubject 는 (구독자가) 구독을 하면 가장 최근 값 혹은 기
 
 pink 는 BehaviorSubject 를 생성할 때 넘긴 초기값이다. 첫 번째 구독자는 초기값을 받고 다음에 red 부터 수신한다. 두 번째 구독자는 green 이 발행된 이후에 구독 했으므로 green 을 처음 전달 받는다.
 
-[Example]()
+[Example](https://github.com/JohnSmith19/reactive-java/blob/e94020ad17fe26f576b6f2d2beac5d3afd2b5c6b/reactive-java/src/main/java/reactivejava/subjects/BehaviorSubjectExample.java)
 
 ### PublishSubject
 
@@ -176,7 +176,7 @@ on Complete 를 호출해 데이터 발행을 완료한다.
 
 첫번째 구독자는 red, green, blue 를 모두 전달 받았으며, 두번째 구독자는 구독한 이후에 발행된 blue 만 전달 받는다.
 
-[Example]()
+[Example](https://github.com/JohnSmith19/reactive-java/blob/2812d8c0640e5caecac5c9a1839d712e04ea6723/reactive-java/src/main/java/reactivejava/subjects/PublishSubjectExample.java)
 
 ## Testing
 
