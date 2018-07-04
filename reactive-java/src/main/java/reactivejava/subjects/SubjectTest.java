@@ -9,6 +9,9 @@ public class SubjectTest {
         ase.asSubscriber();
         ase.afterComplete();
 
+        BehaviorSubjectExample bse = new BehaviorSubjectExample();
+        bse.marbleDiagram();
+
         System.out.println("====== SubjectTest finish ======");
     }
 }

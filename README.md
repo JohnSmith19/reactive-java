@@ -154,6 +154,16 @@ AsyncSubject 는 Observable 에서 발행한 마지막 데이터를 얻어올 �
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/f82763afe8623b760698ee926d6c31a67193ca43/reactive-java/src/main/java/reactivejava/subjects/AsyncSubjectExample.java)
 
+### BehaviorSubject
+
+BehaviorSubject 는 (구독자가) 구독을 하면 가장 최근 값 혹은 기본 값을 넘겨주는 클래스다.
+
+<img src="http://reactivex.io/documentation/operators/images/S.BehaviorSubject.png" width="600"/>
+
+pink 는 BehaviorSubject 를 생성할 때 넘긴 초기값이다. 첫 번째 구독자는 초기값을 받고 다음에 red 부터 수신한다. 두 번째 구독자는 green 이 발행된 이후에 구독 했으므로 green 을 처음 전달 받는다.
+
+[Example]()
+
 ## Testing
 
 ### Unit Test
