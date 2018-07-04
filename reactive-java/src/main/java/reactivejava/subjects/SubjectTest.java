@@ -12,6 +12,9 @@ public class SubjectTest {
         BehaviorSubjectExample bse = new BehaviorSubjectExample();
         bse.marbleDiagram();
 
+        PublishSubjectExample pse = new PublishSubjectExample();
+        pse.marbleDiagram();
+
         System.out.println("====== SubjectTest finish ======");
     }
 }

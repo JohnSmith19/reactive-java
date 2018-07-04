@@ -164,6 +164,20 @@ pink 는 BehaviorSubject 를 생성할 때 넘긴 초기값이다. 첫 번째 �
 
 [Example]()
 
+### PublishSubject
+
+가장 평범한 Subject class. 구독자가 subscribe() 함수를 호출하면 값을 발행하기 시작한다. AsyncSubject 처럼 마지막 값만 발행하거나 BehaviorSubject 처럼 발행한 값이 없을때 기본값을 대신 발행하지도 않는다.
+오직 해당 시간에 발생한 데이터를 그대로 구독자에게 전달받는다.
+
+<img src="http://reactivex.io/documentation/operators/images/S.PublishSubject.png" width="600"/>
+
+첫 번째 구독자가 subscribe() 함수를 호출하면 red, green 데이터를 발행한다. 두번째 구독자가 subscribe() 함수를 호출하면 blue 를 발행하고
+on Complete 를 호출해 데이터 발행을 완료한다.
+
+첫번째 구독자는 red, green, blue 를 모두 전달 받았으며, 두번째 구독자는 구독한 이후에 발행된 blue 만 전달 받는다.
+
+[Example]()
+
 ## Testing
 
 ### Unit Test
