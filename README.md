@@ -212,7 +212,7 @@ subscribe() 을 호출해도 아무 동작이 일어나지 않으며 connect() �
 첫번째와 두번째 구독자가 추가되면 connect() 를 호출에 데이터 발생을 시작한다.
 세번째 구독자를 추가한다 이전에 connect() 를 호출 했으므로 세번째 구독자는 다음에 발생하는 데이터를 바로 수신할 수 있다.
 
-[Example]()
+[Example](https://github.com/JohnSmith19/reactive-java/blob/12c0cfa2bfd3299dd89016cc4843a172c27269c0/reactive-java/src/main/java/reactivejava/connectable/ConnectableObservableExample.java)
 
 ## Testing
 
@@ -224,7 +224,7 @@ subscribe() 을 호출해도 아무 동작이 일어나지 않으며 connect() �
 
 [SubjectTest](https://github.com/JohnSmith19/reactive-java/blob/master/reactive-java/src/main/java/reactivejava/subjects/SubjectTest.java)
 
-[ConnectableObservableTest]()
+[ConnectableObservableTest](https://github.com/JohnSmith19/reactive-java/blob/master/reactive-java/src/main/java/reactivejava/connectable/ConnectableObservableTest.java)
 
 ### Integration Test
 
