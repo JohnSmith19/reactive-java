@@ -10,6 +10,10 @@
 
 ### [just()](http://reactivex.io/documentation/operators/just.html)
 
+create an Observable that emits a particular item
+
+<img src="http://reactivex.io/documentation/operators/images/just.c.png" width="600"/>
+
 인자로 넣은 데이터를 차례로 발행하기 위해 Observable 을 생성한다.
 
 실제 데이터 발행은 subscribe() 를 호출 후 시작한다.
