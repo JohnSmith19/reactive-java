@@ -1,3 +1,4 @@
+import reactivejava.connectable.ConnectableObservableTest;
 import reactivejava.observable.*;
 import reactivejava.single.SingleTest;
 import reactivejava.subjects.SubjectTest;
@@ -12,5 +13,8 @@ public class MainApplication {
 
         SubjectTest subjectTest = new SubjectTest();
         subjectTest.run();
+
+        ConnectableObservableTest connectableObservableTest = new ConnectableObservableTest();
+        connectableObservableTest.run();
     }
 }

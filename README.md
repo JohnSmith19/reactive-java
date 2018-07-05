@@ -201,6 +201,19 @@ ReplaySubject 는 구독자가 새로 생기면 항상 데이터의 처음부터
 
 [Example](https://github.com/JohnSmith19/reactive-java/blob/5b8e97bb2c4f64edacfa20dffc3a5c7edaddb6f9/reactive-java/src/main/java/reactivejava/subjects/ReplaySubjectExample.java)
 
+## ConnectableObservable
+
+ConnectableObservable 은 Subject 클래스처럼 차가운 Observable 을 뜨거운 Observable 로 변환한다. 
+Observable 을 여러 구독자에게 공유할 수 있으므로 원 데이터 하나를 여러 구독자에게 동시에 전달할 때 사용한다.
+subscribe() 을 호출해도 아무 동작이 일어나지 않으며 connect() 를 호출한 시점부터 subscribe() 를 호출한 구독자에게 데이터를 발행한다.
+
+<img src="http://reactivex.io/documentation/operators/images/publishConnect.c.png" width="600"/>
+
+첫번째와 두번째 구독자가 추가되면 connect() 를 호출에 데이터 발생을 시작한다.
+세번째 구독자를 추가한다 이전에 connect() 를 호출 했으므로 세번째 구독자는 다음에 발생하는 데이터를 바로 수신할 수 있다.
+
+[Example]()
+
 ## Testing
 
 ### Unit Test
@@ -210,6 +223,8 @@ ReplaySubject 는 구독자가 새로 생기면 항상 데이터의 처음부터
 [SingleTest](https://github.com/JohnSmith19/reactive-java/blob/master/reactive-java/src/main/java/reactivejava/single/SingleTest.java)
 
 [SubjectTest](https://github.com/JohnSmith19/reactive-java/blob/master/reactive-java/src/main/java/reactivejava/subjects/SubjectTest.java)
+
+[ConnectableObservableTest]()
 
 ### Integration Test
 
